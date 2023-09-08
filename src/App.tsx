@@ -4,9 +4,9 @@ function App() {
     <div className="App">
       <div>12</div>
       <div>12</div>
-      <div>
-        12
-      </div>
+      <div>12</div>
+      <div> 12 </div>
+      <div>12</div>
     </div>
   );
 }
