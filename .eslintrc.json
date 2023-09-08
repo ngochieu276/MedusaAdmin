@@ -1,0 +1,13 @@
+{ "parser": "@typescript-eslint/parser",
+  "extends": ["prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "no-console": "error",
+    "unicorn/no-array-reduce": "off",
+    "prettier/prettier": "error",
+    "@typescript-eslint/no-var-requires": "off"
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}
