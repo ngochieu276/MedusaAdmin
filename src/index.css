@@ -128,7 +128,8 @@ code {
   --code-border: #374151;
 
   /* Layout */
-  --header-height: 76px;
-  --footer-height: 76px;
+  --header-height: 56px;
+  --footer-height: 40px;
   --sidebar-width: 256px;
+  --sidebar-width-collapse: 78px;
 }

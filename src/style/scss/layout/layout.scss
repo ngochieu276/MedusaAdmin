@@ -5,9 +5,13 @@
   grid-template-rows: var(--header-height) 1fr var(--footer-height);
   grid-template-columns: var(--sidebar-width) 1fr;
 
+  &.collapse {
+    grid-template-columns: var(--sidebar-width-collapse) 1fr;
+  }
+
   grid-template-areas:
     'sidebar header'
-    'sidebar    main'
+    'sidebar main'
     'footer footer';
 
   .header {

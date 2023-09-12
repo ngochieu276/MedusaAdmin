@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 export default function SignedLayout() {
   return (
-    <div className="signed-layout">
+    <div className="signed-layout collapse">
       <Header />
       <Sidebar />
       <main className="content">
