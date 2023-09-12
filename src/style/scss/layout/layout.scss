@@ -14,17 +14,7 @@
     'sidebar main'
     'footer footer';
 
-  .header {
-    grid-area: header;
-  }
-
-  .sidebar {
-    grid-area: sidebar;
-  }
-
-  .footer {
-    grid-area: footer;
-  }
+  transition: all ease-in 0.5s;
 
   .content {
     background: lightgreen;

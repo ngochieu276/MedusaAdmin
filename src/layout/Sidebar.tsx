@@ -1,3 +1,13 @@
+import { toggleCollapse } from '../store/reducer/layout';
+import { useDispatch } from 'react-redux';
+
 export default function Sidebar() {
-  return <nav className="sidebar">Sidebar</nav>;
+  const dispatch = useDispatch();
+
+  return (
+    <nav className="sidebar">
+      Sidebar
+      <button onClick={() => dispatch(toggleCollapse())}>Toggle</button>
+    </nav>
+  );
 }
