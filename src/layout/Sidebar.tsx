@@ -13,7 +13,7 @@ import {
   Pricing,
   Setting,
 } from '../style/svg/sidebar';
-import { NavPath } from './dto.layout';
+import { NavPath } from '../dto';
 
 const navList = [
   {
@@ -92,8 +92,10 @@ export default function Sidebar() {
         {navList.map((nav) => {
           return (
             <NavLink to={nav.path} className="sidebar-link">
-              {renderIcon(nav.path)}
-              {nav.label}
+              <div>
+                {renderIcon(nav.path)}
+                <label>{nav.label}</label>
+              </div>
             </NavLink>
           );
         })}

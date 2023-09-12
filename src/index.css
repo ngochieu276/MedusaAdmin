@@ -134,5 +134,6 @@ code {
   --sidebar-width-collapse: 78px;
 
   /* Grey */
-  --grey-50: #6b7280
+  --grey-50: #6b7280;
+  --grey-90: #111827;
 }
