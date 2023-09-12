@@ -4,10 +4,12 @@ import Header from './Header';
 
 export default function SignedLayout() {
   return (
-    <div>
+    <div className="signed-layout">
       <Header />
       <Sidebar />
-      <Outlet />
+      <main className="content">
+        <Outlet />
+      </main>
     </div>
   );
 }
