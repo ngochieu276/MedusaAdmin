@@ -132,4 +132,7 @@ code {
   --footer-height: 40px;
   --sidebar-width: 256px;
   --sidebar-width-collapse: 78px;
+
+  /* Grey */
+  --grey-50: #6b7280
 }

@@ -1,5 +1,23 @@
+@import '../mixin/index.mixin.scss';
+
 .sidebar {
   grid-area: sidebar;
-  color: red;
-  background: lightcyan;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      @include flex($gap: 16px);
+      padding: 6px 136px 6px 8px;
+
+      text-decoration: none;
+      font-family: Inter;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      color: var(--grey-50);
+    }
+  }
 }
