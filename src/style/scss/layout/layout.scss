@@ -1,4 +1,27 @@
 .signed-layout {
+  display: grid;
+  height: 100vh;
+
+  grid-template-rows: var(--header-height) 1fr var(--footer-height);
+  grid-template-columns: var(--sidebar-width) 1fr;
+
+  grid-template-areas:
+    'sidebar header'
+    'sidebar    main'
+    'footer footer';
+
+  .header {
+    grid-area: header;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
   .content {
     background: lightgreen;
   }

@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Header from './Header';
+import Footer from './Footer';
 
 export default function SignedLayout() {
   return (
@@ -10,6 +11,7 @@ export default function SignedLayout() {
       <main className="content">
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 }

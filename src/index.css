@@ -126,4 +126,9 @@ code {
   --code-bg-base: #111827;
   --code-bg-header: #1f2937;
   --code-border: #374151;
+
+  /* Layout */
+  --header-height: 76px;
+  --footer-height: 76px;
+  --sidebar-width: 256px;
 }
