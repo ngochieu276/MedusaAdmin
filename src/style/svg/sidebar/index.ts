@@ -8,5 +8,6 @@ import Promote from './promote';
 import GiftCard from './giftcard';
 import Pricing from './pricing';
 import Setting from './setting';
+import BurgerMenu from './burgerMenu';
 
-export { Search, Bell, Tag, Customer, Cart, Inventory, Promote, GiftCard, Pricing, Setting };
+export { Search, Bell, Tag, Customer, Cart, Inventory, Promote, GiftCard, Pricing, Setting, BurgerMenu };

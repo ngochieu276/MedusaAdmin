@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { toggleCollapse } from '../store/reducer/layout';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import type { RootState } from '../store';
 import {
   Search,
   Bell,
@@ -12,8 +13,10 @@ import {
   GiftCard,
   Pricing,
   Setting,
+  BurgerMenu,
 } from '../style/svg/sidebar';
 import { NavPath } from '../dto';
+import Avt from '../style/img/avt.jpg';
 
 const navList = [
   {
@@ -59,6 +62,7 @@ const navList = [
 ];
 
 export default function Sidebar() {
+  const isCollapse = useSelector((state: RootState) => state.layout.isCollapse);
   const dispatch = useDispatch();
 
   const renderIcon = (path: string) => {
@@ -87,14 +91,25 @@ export default function Sidebar() {
 
   return (
     <div className="sidebar">
-      <button onClick={() => dispatch(toggleCollapse())}>Toggle</button>
+      <div className="sidebar-general">
+        <div className="sidebar-avt">
+          <img src={Avt} alt="avt" />
+        </div>
+        <i onClick={() => dispatch(toggleCollapse())}>
+          <BurgerMenu />
+        </i>
+      </div>
+      <div className={`sidebar-store ${isCollapse ? 'hidden' : ''}`}>
+        <label>Store</label>
+        <p>N2h Fabrics</p>
+      </div>
       <nav>
         {navList.map((nav) => {
           return (
             <NavLink to={nav.path} className="sidebar-link">
               <div>
                 {renderIcon(nav.path)}
-                <label>{nav.label}</label>
+                {!isCollapse && <label>{nav.label}</label>}
               </div>
             </NavLink>
           );
