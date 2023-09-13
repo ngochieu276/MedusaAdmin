@@ -147,6 +147,11 @@ p,h1,h2,h3,h4,h5,h6 {
   --sidebar-width-collapse: 78px;
 
   /* Grey */
+  --grey-00: #ffffff;
+  --grey-10: #F3F4F6;
+  --grey-30: #D1D5DB;
+  --grey-40: #9CA3AF;
   --grey-50: #6b7280;
+  --grey-70: #374151;
   --grey-90: #111827;
 }

@@ -1,8 +1,7 @@
-@import '../mixin/index.mixin.scss';
-
 .sidebar {
   grid-area: sidebar;
   padding: 16px;
+  border-right: 1px solid var(--grey-30);
 
   &-general {
     @include flex($justify-content: space-between);

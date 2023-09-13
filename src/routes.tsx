@@ -6,7 +6,8 @@ import Notification from './pages/Notification/Notification';
 import Product from './pages/product/Product';
 import Customer from './pages/Customers/Customer';
 import Orders from './pages/Orders/Orders';
-import Inventory from './pages/Inventory/Inventory';
+
+import InventoryRoutes from './pages/Inventory/inventoty.routes';
 import Promotions from './pages/Promotions/Promotions';
 import GiftCards from './pages/GiftCards/GiftCards';
 import Pricing from './pages/Pricing/Pricing';
@@ -40,10 +41,7 @@ export const routes = createBrowserRouter([
         path: NavPath.Orders,
         element: <Orders />,
       },
-      {
-        path: NavPath.Inventory,
-        element: <Inventory />,
-      },
+      ...InventoryRoutes,
       {
         path: NavPath.Promotions,
         element: <Promotions />,
