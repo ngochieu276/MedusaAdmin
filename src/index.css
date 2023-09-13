@@ -141,7 +141,7 @@ p,h1,h2,h3,h4,h5,h6 {
   --code-border: #374151;
 
   /* Layout */
-  --header-height: 56px;
+  --header-height: 40px;
   --footer-height: 40px;
   --sidebar-width: 256px;
   --sidebar-width-collapse: 78px;

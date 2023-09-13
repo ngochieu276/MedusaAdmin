@@ -1,5 +1,10 @@
+@import '../mixin/index.mixin.scss';
 .header {
   grid-area: header;
-  color: blue;
-  background: lightcoral;
+  @include flex($gap: 12px);
+  padding: 0 12px;
+
+  &-question {
+    margin-left: auto;
+  }
 }
