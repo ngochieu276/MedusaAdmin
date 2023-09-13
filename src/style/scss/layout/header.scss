@@ -1,0 +1,10 @@
+.header {
+  grid-area: header;
+  @include flex($gap: 12px);
+  padding: 0 12px;
+  border-bottom: 1px solid var(--grey-30);
+
+  &-question {
+    margin-left: auto;
+  }
+}

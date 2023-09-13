@@ -1,0 +1,23 @@
+.signed-layout {
+  display: grid;
+  height: 100vh;
+
+  grid-template-rows: var(--header-height) 1fr var(--footer-height);
+  grid-template-columns: var(--sidebar-width) 1fr;
+
+  &.collapse {
+    grid-template-columns: var(--sidebar-width-collapse) 1fr;
+  }
+
+  grid-template-areas:
+    'sidebar header'
+    'sidebar main'
+    'footer footer';
+
+  transition: all ease-in 0.5s;
+
+  .content {
+    padding: 0 156px;
+    background: var(--grey-10);
+  }
+}

@@ -12,6 +12,19 @@ code {
     monospace;
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding:  0;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.unrender {
+  display: none;
+}
+
 :root {
   /* Backgrounds */
   --bg-subtle: #F9FAFB;
@@ -126,4 +139,19 @@ code {
   --code-bg-base: #111827;
   --code-bg-header: #1f2937;
   --code-border: #374151;
+
+  /* Layout */
+  --header-height: 40px;
+  --footer-height: 40px;
+  --sidebar-width: 256px;
+  --sidebar-width-collapse: 78px;
+
+  /* Grey */
+  --grey-00: #ffffff;
+  --grey-10: #F3F4F6;
+  --grey-30: #D1D5DB;
+  --grey-40: #9CA3AF;
+  --grey-50: #6b7280;
+  --grey-70: #374151;
+  --grey-90: #111827;
 }

@@ -1,0 +1,24 @@
+.inventory {
+  nav {
+    @include flex($gap: 12px);
+    padding: 12px 0;
+
+    a {
+      text-decoration: none;
+      color: var(--grey-50);
+      padding: 6px 12px;
+      border-radius: 99999px;
+      font-family: Inter;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+
+      &.active {
+        color: var(--grey-90);
+        background-color: var(--grey-00);
+        outline: 1px solid var(--grey-40);
+      }
+    }
+  }
+}
