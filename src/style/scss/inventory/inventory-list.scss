@@ -1,0 +1,20 @@
+.inventory-list {
+  &-header {
+    @include flex($gap: 16px);
+    padding: 16px;
+    background: var(--grey-00);
+    border-bottom: 1px solid var(--grey-30);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+
+  h5 {
+    margin-right: auto;
+    color: var(--grey-90);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+  }
+}
