@@ -18,3 +18,15 @@
     line-height: 32px;
   }
 }
+
+.inventory-list-table {
+  .item-name-with-image {
+    @include flex($gap: 8px);
+
+    img {
+      width: 30px;
+      height: 40px;
+      border-radius: 4px;
+    }
+  }
+}
