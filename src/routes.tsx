@@ -1,6 +1,5 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 
-import { Home } from './pages/home';
 import Search from './pages/Search/Search';
 import Notification from './pages/Notification/Notification';
 import Product from './pages/product/Product';
@@ -60,7 +59,7 @@ export const routes = createBrowserRouter([
       },
       {
         path: '',
-        element: <Home />,
+        element: <Navigate to={NavPath.Inventory} />,
       },
     ],
   },

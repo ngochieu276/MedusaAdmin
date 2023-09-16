@@ -30,7 +30,7 @@ export default function Inventory() {
       <nav>
         {navList.map((nav) => {
           return (
-            <NavLink to={nav.path} className="inventory-link">
+            <NavLink to={nav.path}>
               <div>
                 <label>{nav.label}</label>
               </div>

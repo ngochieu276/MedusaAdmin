@@ -1,7 +1,7 @@
 .inventory {
   nav {
     @include flex($gap: 12px);
-    padding: 12px 0;
+    padding: 20px 0;
 
     a {
       text-decoration: none;

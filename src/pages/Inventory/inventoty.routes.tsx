@@ -8,6 +8,8 @@ import PurchaseOrders from './PurchaseOrders/PurchaseOrders';
 import Suppliers from './Suppliers/Suppliers';
 import Transfers from './Transfers/Transfers';
 
+import { Navigate } from 'react-router-dom';
+
 export default [
   {
     path: NavPath.Inventory,
@@ -32,6 +34,10 @@ export default [
       {
         path: InventoryPath.PurchaseOrders,
         element: <PurchaseOrders />,
+      },
+      {
+        path: '',
+        element: <Navigate to={InventoryPath.InventoryList} />,
       },
     ],
   },
