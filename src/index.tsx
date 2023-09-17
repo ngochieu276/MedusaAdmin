@@ -7,11 +7,13 @@ import { RouterProvider } from 'react-router-dom';
 import { routes } from './routes';
 import { store } from './store/index';
 import { Provider } from 'react-redux';
+import ModalComponent from './components/modal/ModalComponent';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Provider store={store}>
       <RouterProvider router={routes} />
+      <ModalComponent key="app-modal" />
     </Provider>
   </React.StrictMode>
 );
